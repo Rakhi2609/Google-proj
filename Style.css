@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 13px;
+
+}
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section header ul li{
+    list-style: none;
+    margin-left: 20px;
+    text-decoration: none;
+}
+section header ul li a{
+    color: #111;
+    text-decoration: none;
+    font-size: 13px;
+ }
+ section header ul li button{
+    background-color: #4584ef;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+ }
+ section.main{
+    width: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ section.main.searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+       }
+      .search{
+        width: 100%;
+        padding: 13px;
+        padding-left: 15px;
+        padding-right: 20px;
+        border-radius: 30px;
+        outline: none;
+        font-size: 16px;
+              }
+             .icons{
+                position: relative;
+                width: 100%;
+                bottom: 47px;
+                display: flex;
+                padding: 12px 20px;
+              align-items: center;
+              margin: 0;
+              justify-content: space-between;
+              pointer-events: none;
+              }
+              .buttons{
+               margin-bottom: 40px;
+               
+              }
+              .buttons button{
+                margin: 0 35px;
+                padding: 12px 20px;
+                color: #555;
+                font-size: 13px;
+                border: none;
+                cursor: pointer;
+                border-radius: 1px solid transparent;
+
+              }
+              .buttons button:hover{
+                border-radius: 1px solid #ccc;
+              }
+              .lang{
+                margin-top: 10px;
+                text-align: center;
+                align-items: center;
+              }
+              .footer{
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                background-color: #f2f2f2;
+              }
+              .row{
+                display: flex;
+                justify-content: space-between;
+                border-top: 1px solid white;
+              }
+         .row ul{
+            display: flex;
+         }
+         .row ul li{
+            list-style: none;
+         }
+         .row ul li a{
+            text-decoration: none;
+            font-size: 14px;
+            margin-right: 25px;
+            color: black;
+
+         }
+                       
+      /*mobile view*/
+      @media(max-width:768px) {
+         section.main.searchbox{
+            width: 60%;
+         }
+
+      }  
